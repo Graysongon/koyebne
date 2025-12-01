@@ -33,10 +33,11 @@
 
 [](https://www.google.com/search?q=https://app.koyeb.com/deploy%3Fname%3Dkoyebne%26type%3Dgit%26repository%3Dgithub.com/justlagom/koyebne%26branch%3Dmain%26env%5BENC_CONFIG%5D%3D)
 
-1.  **Repository:** 确保选择了 `justlagom/koyebne`（建议fork后创建自己的docker镜像）。
-2.  **Environment Variables:** 填入您准备好的 **`ENC_CONFIG`** 值。
-3.  **Service Type:** 保持默认的 **Web Service**。
-4.  点击 **"Deploy"** 完成部署。
+1.  **Sources:** 填写docker镜像地址 `ghcr.io/xxx/xxx`（建议fork后创建自己的docker镜像）。
+2.  **Environment variables and files:** 填入您准备好的 **`ENC_CONFIG`** 值。（UUID，DOMAIN）
+3.  **Instance:** 选择CPU Eco免费DE&US。
+4.  **Ports:** 需要开启一个7860默认暴露端口（开启**Public HTTPS access**），一个xray配置中自定义端口（可不开启 **Public HTTPS access** ）
+5.  点击 **"Deploy"** 完成部署。
 
 部署完成后，记下 Koyeb 分配给您的服务 **URL**，例如 `https://koyebne-xxxxx.koyeb.app`，这个 URL 将用于后续的保活配置。
 
