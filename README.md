@@ -39,8 +39,8 @@
 
 ### 步骤 2: 一键部署
 
-点击下方的 Koyeb 部署按钮，系统将自动跳转到 Koyeb 部署页面：
-
+# 点击下方的 Koyeb 部署按钮，系统将自动跳转到 Koyeb 部署页面：
+[Koyeb Serverless Platform](https://www.koyeb.com/)
 [](https://www.google.com/search?q=https://app.koyeb.com/deploy%3Fname%3Dkoyebne%26type%3Dgit%26repository%3Dgithub.com/justlagom/koyebne%26branch%3Dmain%26env%5BENC_CONFIG%5D%3D)
 
 1.  **Sources:** 填写docker镜像地址 `ghcr.io/xxx/xxx`（建议fork后创建自己的docker镜像）。
@@ -63,6 +63,8 @@
 为了确保 Koyeb 部署的服务不会因长时间（14天未登录）不活跃而被暂停项目，提供了 `worker.js` 文件，可部署到 Cloudflare Workers 实现定时访问保活。
 
 ### 步骤 1: 获取 koyeb账号登录token
+
+TOKEN获取方式：koyeb主页左下角，点击个人账户头像，——>用户设置——>个人访问令牌——>创建——>记下token
 
 ### 步骤 2: 部署 Cloudflare Worker
 
